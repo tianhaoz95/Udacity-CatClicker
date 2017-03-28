@@ -5,6 +5,22 @@
 
 <title>Cat Clicker</title>
 
+<style>
+body {
+  background-color: #00274c;
+  text-align: center;
+}
+
+h1 {
+  color: #ffcb05;
+}
+
+p {
+  color: #ffcb05;
+}
+
+</style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
@@ -13,17 +29,19 @@
 <h1>Welcome to Cat Clicker!</h1>
 
 <table>
-<tbody>
-  <tr>
-    <td>
-      <p> Your Cats: </p>
-      <div id="kitty_list"></div>
-    </td>
-    <td>
-      <div id="kitty_detail"></div>
-    </td>
-  <tr>
-</tbody>
+  <col width="500">
+  <col width="500">
+  <tbody>
+    <tr>
+      <td valign="top">
+        <p> Your Cats: (Click on one to see the cute kitty)</p>
+        <div id="kitty_list"></div>
+      </td>
+      <td valign="top">
+        <div id="kitty_detail"></div>
+      </td>
+    <tr>
+  </tbody>
 </table>
 
 <script src="script/main.js"></script>

@@ -25,12 +25,12 @@ $(document).ready(function() {
       return function() {
         $('#kitty_detail').empty();
         var kitty_img = $('<img>', {height:300 , src:srcs[idx]});
-        var click_count = $('<p></p>', {id:'kitty_counter'}).text(counters[idx]);
-        var kitty_name = $('<p></p>').text(kitty_list[idx]);
+        var click_count = $('<p></p>', {id:'kitty_counter'}).text('You have clicked me ' + counters[idx] + ' times!');
+        var kitty_name = $('<p></p>').text('My name is: ' + kitty_list[idx]);
         var kitty_click = $('<a></a>').html(kitty_img).click(function() {
           var old = counters[idx];
           counters[idx] = old + 1;
-          $('#kitty_counter').text(counters[idx]);
+          $('#kitty_counter').text('You have clicked me ' + counters[idx] + ' times!');
         });
         $('#kitty_detail').append(kitty_name);
         $('#kitty_detail').append(click_count);
