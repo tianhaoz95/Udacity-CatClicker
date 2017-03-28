@@ -2,29 +2,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
 <title>Cat Clicker</title>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 <h1>Welcome to Cat Clicker!</h1>
 
-<p>You clicked: </p>
-<p id="count">0</p>
-
-<a id="cat_img">
-  <img src="img/cat.jpg">
+<p id="catName1"><p>
+<a id="cat_img1">
+  <img src="img/cat1.jpg">
 </a>
+<p>You clicked: </p>
+<p id="count1">0</p>
 
-<script>
-  var count = 0;
+<p id="catName2"><p>
+<a id="cat_img2">
+  <img src="img/cat2.jpg">
+</a>
+<p>You clicked: </p>
+<p id="count2">0</p>
 
-  $('#cat_img').click(function() {
-    count = count + 1;
-    $('#count').text(count);
-  });
-</script>
-
+<script src="script/main.js"></script>
 
 </body>
 
